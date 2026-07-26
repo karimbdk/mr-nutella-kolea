@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Promo — Mr Nutella</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1200px;height:630px;overflow:hidden}
+  body{
+    font-family:'Poppins',sans-serif;position:relative;
+    background:#FFF6E9;
+  }
+  .glow{position:absolute;border-radius:50%}
+  .glow.g1{width:900px;height:900px;right:-250px;top:-320px;background:radial-gradient(circle,rgba(244,176,0,.22),transparent 65%)}
+  .glow.g2{width:420px;height:420px;left:-120px;bottom:-160px;background:radial-gradient(circle,rgba(244,176,0,.16),transparent 65%)}
+  .drip{position:absolute;top:0;left:0;right:0}
+  .left{position:absolute;left:84px;top:74px;width:620px}
+  .logo svg{height:188px}
+  .badge{
+    display:inline-block;background:#F4B000;color:#fff;
+    font-family:'Poppins',sans-serif;font-weight:600;font-size:25px;letter-spacing:3px;
+    padding:8px 34px;border-radius:8px;margin:6px 0 0 4px;
+  }
+  .tag{
+    font-family:'Baloo 2',cursive;font-style:italic;font-weight:700;
+    font-size:42px;color:#3A2416;margin-top:18px;position:relative;display:inline-block;
+  }
+  .tag::after{
+    content:"";position:absolute;left:2px;right:0;bottom:-2px;height:6px;
+    background:#F4B000;border-radius:3px;transform:rotate(-.6deg);
+  }
+  .cats{font-size:23px;color:#8a6f5c;margin-top:16px;font-weight:500;max-width:560px}
+  .contact{
+    position:absolute;left:84px;bottom:36px;
+    background:#3A2416;color:#FFF6E9;font-weight:600;font-size:23px;
+    padding:13px 28px;border-radius:28px;white-space:nowrap;
+  }
+  .contact b{color:#F4B000;font-weight:600}
+  .tiles{position:absolute;right:0;top:0;width:520px;height:630px}
+  .tile{
+    position:absolute;background:#fff;padding:10px;border-radius:26px;
+    box-shadow:0 24px 50px rgba(58,36,22,.35);
+  }
+  .tile img{display:block;object-fit:cover;border-radius:18px}
+  .t1{right:190px;top:250px;transform:rotate(-2deg);z-index:3}
+  .t1 img{width:265px;height:265px}
+  .t2{right:60px;top:62px;transform:rotate(3deg);z-index:2}
+  .t2 img{width:200px;height:200px}
+  .t3{right:28px;top:330px;transform:rotate(-3deg);z-index:1}
+  .t3 img{width:190px;height:190px}
+  .star{
+    position:absolute;right:404px;top:148px;z-index:4;transform:rotate(-5deg);
+    background:#F4B000;color:#3A2416;font-family:'Baloo 2',cursive;font-weight:700;
+    font-size:26px;padding:9px 24px;border-radius:30px;white-space:nowrap;
+    box-shadow:0 14px 30px rgba(58,36,22,.3);
+  }
+</style>
+</head>
+<body>
+  <div class="glow g1"></div>
+  <div class="glow g2"></div>
+  <svg class="drip" width="1200" height="70" viewBox="0 0 1200 70" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#3A2416" d="M0,0 L1200,0 L1200,26 Q1185,52 1170,26 Q1152,4 1130,26 Q1116,62 1096,26 Q1080,8 1058,26 Q1044,46 1024,26 Q1008,4 986,26 Q972,70 950,26 Q936,8 914,26 Q900,42 880,26 Q864,4 842,26 Q828,58 806,26 Q792,8 770,26 Q756,44 736,26 Q720,4 698,26 Q684,66 662,26 Q648,8 626,26 Q612,42 592,26 Q576,4 554,26 Q540,54 518,26 Q504,8 482,26 Q468,44 448,26 Q432,4 410,26 Q396,62 374,26 Q360,8 338,26 Q324,42 304,26 Q288,4 266,26 Q252,56 230,26 Q216,8 194,26 Q180,44 160,26 Q144,4 122,26 Q108,64 86,26 Q72,8 50,26 Q36,40 16,26 Q8,16 0,26 Z"/>
+  </svg>
+
+  <div class="left">
+    <div class="logo">
+      <svg viewBox="0 0 300 130" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="#1E1E1E" stroke-width="9" stroke-linecap="round" fill="none">
+          <path d="M28 14 Q14 16 15 30 L15 90 Q14 106 30 106"/>
+          <path d="M262 12 Q280 13 279 28 L279 52"/>
+        </g>
+        <text x="40" y="62" font-family="'Baloo 2',cursive" font-weight="800" font-size="58" fill="#F4B000">Mr</text>
+        <g font-family="'Baloo 2',cursive" font-weight="800" font-size="46">
+          <text x="40" y="103" fill="#1E1E1E">n</text>
+          <text x="68" y="103" fill="#E63946">utella</text>
+        </g>
+        <g fill="#2A1810">
+          <path d="M232 30 q10 -12 4 -20 q12 6 2 22 z"/>
+          <circle cx="248" cy="18" r="5"/>
+          <circle cx="252" cy="34" r="3.6"/>
+        </g>
+      </svg>
+    </div>
+    <span class="badge">DEPUIS 2008</span><br>
+    <span class="tag">The Home Of Desserts</span>
+    <div class="cats">Crêpes • Gaufres • Pancakes • Milkshakes • Cake Dubai</div>
+  </div>
+
+  <div class="contact">📍 Koléa &nbsp;·&nbsp; <b>0559 26 47 15</b> &nbsp;·&nbsp; 📸 @mr_nutella_kolea</div>
+
+  <div class="tiles">
+    <div class="tile t2"><img src="assets/photo-bubble-cornet.jpg" alt=""></div>
+    <div class="tile t3"><img src="assets/photo-pancakes-pistache.jpg" alt=""></div>
+    <div class="tile t1"><img src="assets/photo-crepe-coeur-fraises.jpg" alt=""></div>
+    <div class="star">⭐ 4.9 / 5</div>
+  </div>
+</body>
+</html>

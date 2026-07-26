@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galerie — Mr Nutella Koléa</title>
+<meta name="description" content="La galerie gourmande de Mr Nutella Koléa — crêpes, gaufres, milkshakes et plus. Retrouvez nos vraies photos sur Instagram @mr_nutella_kolea.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Baloo+Bhaijaan+2:wght@500;600;700;800&family=Poppins:wght@300;400;500;600&family=Tajawal:wght@300;400;500;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<meta property="og:title" content="Galerie — Mr Nutella Koléa">
+<meta property="og:description" content="La galerie gourmande de Mr Nutella Koléa — crêpes, gaufres, milkshakes et plus. Retrouvez nos vraies photos sur Instagram @mr_nutella_kolea.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mr Nutella Koléa">
+<meta property="og:image" content="assets/promo-social.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><link rel="icon" type="image/jpeg" href="assets/logo-icon.jpg">
+<style>
+  .g-item .g-art{min-height:150px}
+  .g-tall .g-art{min-height:240px}
+</style>
+</head>
+<body data-page="gallery.html" data-title="Galerie — Mr Nutella" data-title-ar="المعرض — Mr Nutella">
+
+<header class="navbar" id="navbar"></header>
+
+<div class="menu-hero">
+  <div class="container">
+    <h1 data-i18n="gal_h1"></h1>
+    <p data-i18n="gal_sub"></p>
+  </div>
+  <div class="drip" data-color="#FFF6E9"></div>
+</div>
+
+<section style="padding-top:40px">
+  <div class="container">
+    <div class="masonry" id="masonry"></div>
+
+    <div class="cta-band reveal" style="margin-top:50px">
+      <div>
+        <h2 data-i18n="insta_title"></h2>
+        <p>@mr_nutella_kolea · 79K</p>
+      </div>
+      <a class="btn btn-choco" href="https://www.instagram.com/mr_nutella_kolea/" target="_blank" rel="noopener">📸 <span data-i18n="insta_btn"></span></a>
+    </div>
+  </div>
+</section>
+
+<footer id="footer"></footer>
+
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+  const draw = ()=>{
+    const ALL = [...PHOTOS, ...MENU_IMGS];
+    document.getElementById("masonry").innerHTML = ALL.map((m,i)=>`
+      <div class="g-item g-photo" onclick="openLB(${i}, window.__gal)" style="cursor:zoom-in">
+        <img src="${m.src}" alt="${m.fr}" loading="lazy">
+        <div class="cap">${LANG==="ar"?m.ar:m.fr}</div>
+      </div>`).join("");
+    window.__gal = ALL;
+  };
+  draw(); document.addEventListener("langchange", draw);
+});
+</script>
+</body>
+</html>

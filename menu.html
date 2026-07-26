@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — Mr Nutella Koléa</title>
+<meta name="description" content="Le menu complet de Mr Nutella Koléa : crêpes, gaufres, bubble waffles, pancakes, sundaes, milkshakes, smoothies — versions Nutella & El Mordjene.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Baloo+Bhaijaan+2:wght@500;600;700;800&family=Poppins:wght@300;400;500;600&family=Tajawal:wght@300;400;500;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<meta property="og:title" content="Menu — Mr Nutella Koléa">
+<meta property="og:description" content="Le menu complet de Mr Nutella Koléa : crêpes, gaufres, bubble waffles, pancakes, sundaes, milkshakes, smoothies — versions Nutella & El Mordjene.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mr Nutella Koléa">
+<meta property="og:image" content="assets/promo-social.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><link rel="icon" type="image/jpeg" href="assets/logo-icon.jpg">
+</head>
+<body data-page="menu.html" data-title="Menu — Mr Nutella Koléa" data-title-ar="المينيو — Mr Nutella القليعة">
+
+<header class="navbar" id="navbar"></header>
+
+<div class="menu-hero">
+  <div class="container">
+    <div data-logo-badge="70" style="display:flex;justify-content:center;margin-bottom:14px"></div>
+    <h1 data-i18n="menu_h1"></h1>
+    <p data-i18n="menu_sub"></p>
+  </div>
+  <div class="drip" data-color="#FFF6E9"></div>
+</div>
+
+<section style="padding-top:10px">
+  <div class="container">
+    <div class="menu-tools">
+      <div class="menu-search">
+        <span class="mag">🔍</span>
+        <input type="search" id="menuSearch" data-i18n-ph="menu_search_ph">
+      </div>
+    </div>
+    <div class="tabs" id="menuTabs"></div>
+    <div class="legend">
+      <span class="dotN" data-i18n="legend_n"></span>
+      <span class="dotM" data-i18n="legend_m"></span>
+    </div>
+    <div id="menuWrap" data-cat="all"></div>
+    <div class="no-results" id="noResults" data-i18n="menu_no_results"></div>
+
+    <div class="sec-head reveal" style="margin-top:70px">
+      <span class="kicker" data-i18n="omenu_kicker"></span>
+      <h2 data-i18n="omenu_title"></h2>
+      <p data-i18n="omenu_sub"></p>
+    </div>
+    <div class="omenu-strip" id="omenuStrip"></div>
+    <div style="text-align:center;margin-top:26px">
+      <a class="btn btn-gold" href="assets/menu-complet.jpg" target="_blank" rel="noopener" data-i18n="omenu_download"></a>
+    </div>
+
+    <div class="cta-band reveal" style="margin-top:50px">
+      <div>
+        <h2 data-i18n="menu_cta"></h2>
+        <p style="direction:ltr">📞 +213 559 26 47 15</p>
+      </div>
+      <a class="btn btn-choco" id="menuWaBtn" target="_blank" rel="noopener" href="#">💬 WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer id="footer"></footer>
+
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded",()=>{ document.getElementById("menuWaBtn").href = waLink(); });
+</script>
+</body>
+</html>
